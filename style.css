@@ -49,13 +49,51 @@ body {
     
    
  }
+main {
+    background-image: url(/images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+main .intro {
+    background-color: #00000067;
+    width: 580px;
+    
+    padding: 20px;
+    text-align: center;
+    border-radius:20% 0% 20% 0% ;
+}
+
+main .intro h1 {
+    font-size :50px;
+    color: #fff;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+main .intro p {
+    margin-bottom: 20px;
+    color:#fff;
+    letter-spacing: 1px;
+}
+main .intro button {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius:10px 15px ;
+    outline: none;
+    border: none;
+}
 
  @media (max-width:600px) {
 
     nav {
         
         flex-direction: column;
-        border-bottom:solid ;
+        
         
 
 
@@ -105,5 +143,81 @@ body {
         padding: 10px 0;
        
     }
+
+    main  {
+        background-size:600px;
+        height: auto;
+    }
+
+    main .intro {
+        
+        width: 540px;
+    }
+    main .intro h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    main .intro button {
+        font-size: 14px;
+    }
+    main .intro p {
+        font-size: 14px;
+    }
     
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery .food {
+        margin: auto;
+       grid-template-columns: 1,1fr;
+       gap: 20px;
+    }
+    .food img {
+        width: 100%;
+    }
+    .gallery .food {
+        margin: auto;
+    }
+ }
+
+ @media (min-width:601px) {
+    ul li {
+        margin-left: 20px;
+    }
+    
+ }
+
+ .gallery {
+    
+    width: 90%;
+    margin: 20px auto;
+    
+ }
+ .gallery h2  {
+    
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    
+ }
+
+ .gallery .food {
+    
+    margin:  auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    align-items: center;
+    width: 90%;
+    
+    
+ }
+
+ .gallery .food img {
+
+    
+
+
+   
  }
